@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+<div class="container">
+    <h1 style="margin-left:40%;">Building data</h1>
+    <div class="row">
+        <div class="col jumbotron jumbotron-fluid" style="text-align:center;">
+            <h1>Level of co2</h1>
+            <h2>{{level_of_co2}} ppm</h2>
+        </div>
+        <div class="col jumbotron jumbotron-fluid" style="text-align:center;">
+            <h1>Fan speed</h1>
+            <h2>{{fan_speed}} Hz</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col jumbotron jumbotron-fluid" style="text-align:center;">
+            <h1>Humidity</h1>
+            <h2>45 %</h2>
+        </div>
+        <div class="col jumbotron jumbotron-fluid" style="text-align:center;">
+            <h1>Temp.</h1>
+            <h2>22 C</h2>
+        </div>
+    </div>
+    <button id="covid_emergency" type="button" class="btn btn-danger" style="width:100%;height:50px;">Vent building with full power (COVID 19 emergency)</button>
+
+</div>
+<div class="modal fade" id="popup_covid" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="popup_header">COVID EMERGENCY</h4>
+                </div>
+                <div class="modal-body">
+                    <div id ='chose_sfg_code_form'>
+                        <p>
+                            For next 1h all vents will work on 100% power to exchange all air in the building
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button  type="button" class="btn btn-default close_popup " data-dismiss="modal">Close</button>
+
+                </div>
+                </div>
+            </div>
+    </div>
+</div>
+    <script type="text/javascript">
+        $("#covid_emergency").click(function(){
+                $('#popup_covid').modal('show');
+            });
+            $(".close_popup").click(function(){
+                 $('#popup_covid').modal('hide');
+            });
+        setTimeout(function(){
+           window.location.reload();
+        }, 10000);
+    </script>
+{% endblock %}

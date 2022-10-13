@@ -1,0 +1,101 @@
+
+tr{
+    font-size: 10px;
+}
+button{
+
+}
+.btn-primary{
+    font-size: 10px;!important
+}
+body{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.time_input {
+    width: 100%;
+    padding: 0.25em 0.5em;
+    border:none;
+    border-bottom: 1px solid gray;
+}
+
+table thead {
+    position: sticky;
+    inset-block-start: 0px;
+    background: lightgrey;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.jumbotron {
+    background: #EFECD2;
+    margin: 20px;
+    padding:10px;
+    top: 50%;
+    border-radius: 6px ;
+    text-align:center;
+}
+
+.btn-building-list {
+    width: 20em;
+    margin: 5px;
+}
+
+form {
+ max-width: 325px;
+}
+
+.user-btns {
+    float: right;
+}
+
+.navbar-nav {
+    width: 100%;
+}
+
+.table2rowspan {
+    text-align:center;
+    vertical-align: middle;
+}
+
+table {
+ margin-top: 15px;
+}
+
+#generate_raport {
+    margin-left: 40%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.clearablefileinput {
+    margin: 0px;
+}
+
+.bg-cbre {
+    background-color: #003F2D; !important
+}
+
+.btn-info {
+    color: #000;
+    background-color: #80BBAD;
+    border-color: #80BBAD;
+}
+
+.btn-primary {
+    color: #000;
+    background-color: #C0D4CB;
+    border-color: #C0D4CB;
+}
+
+.modal-header{
+    background-color: #003F2D; !important
+}
+
+.modal-title{
+    color: white;
+}
