@@ -17,12 +17,12 @@ env = environ.Env()
 def main_calculation(request):
     sensor_ppm = random.randrange(500,1000)
     max_speed = 61
-    min_speed = 20
+    min_speed = 30
     ppm_leap = 4
     speed_leap = 0.4
     if sensor_ppm >= 1000:
         fan_speed = max_speed
-    elif sensor_ppm <= 600:
+    elif sensor_ppm <= 700:
         fan_speed = min_speed
     else:
         ppms = (1000-sensor_ppm)/ppm_leap
